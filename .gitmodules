@@ -1,0 +1,3 @@
+[submodule "hustmirror-cli"]
+	path = hustmirror-cli
+	url = https://github.com/hust-open-atom-club/hustmirror-cli.git
