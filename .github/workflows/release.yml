@@ -21,7 +21,10 @@ jobs:
         - uses: pdm-project/setup-pdm@v3
 
         - name: "sync from upstream"
-          run: make sync
+          run: |
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            make sync
 
         - name: Publish package distributions to PyPI
           run: pdm publish
