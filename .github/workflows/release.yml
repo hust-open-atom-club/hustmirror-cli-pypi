@@ -25,6 +25,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             make sync
+            git push
 
         - name: Publish package distributions to PyPI
           run: pdm publish
